@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>UHCL Evaluation</title>
+    </h:head>
+    
+    <h1>Summary</h1>
+    <h:body>
+        Course: #{userData.course}<br></br>
+        Instructor:#{userData.instructor}<br></br>
+        Student Name:#{userData.studentName}<br></br>
+        
+        <h2>Teaching Approaches</h2>
+        1. The instructor stimulated my interest in the subject.: #{userData.choice1}<br></br>
+        2. The instructor managed classroom time and pace well. : #{userData.choice2}<br></br>
+        3. The instructor was organized and prepared for every class. : #{userData.choice3}<br></br>
+        4. The instructor encouraged discussions and responded to questions : #{userData.choice4}<br></br>
+        5. The instructor demonstrated in-depth knowledge of the subject : #{userData.choice5}<br></br>
+        6. The instructor appeared enthusiastic and interested. : #{userData.choice6}<br></br>
+        7. The instructor used a variety of instructional methods to reach the course objectives (e.g.group discussions, student presentations, etc.) : #{userData.choice7}<br></br>
+        8. The instructor challenged students to do their best work. : #{userData.choice8}<br></br>
+        9. The instructor was accessible outside of class: #{userData.choice9}<br></br>
+        10.Did the instructor actively attempt to prevent cheating: #{userData.choice10}<br></br>
+        Comment(Teaching Approaches): #{userData.comment1}<br></br>
+        
+        <h2>Feedback and Assessment</h2>
+        11. Information about the assessment was communicated clearly: #{userData.choice11}<br></br>
+        12. Feedback was provided within the stated time frame. : #{userData.choice12}<br></br>
+        13. Feedback showed how to improve my work (e .g. corrections including comments). : #{userData.choice13}<br></br>
+        Comments (Feedback and Assessment): #{userData.comment2}<br></br>
+        
+        <h2>Resources and Administration</h2>
+        14. The course was supported by adequate library resources: #{userData.choice14}<br></br>
+        15. Blackboard resources for the course were useful: #{userData.choice15}<br></br>
+        16. Instructor gave guidance on where to find resources: #{userData.choice16}<br></br>
+        Comments (Resources and Administration): #{userData.comment3}<br></br>
+        
+        <h2>Additional Question</h2>
+        17. The syllabus was explained at the beginning of the course: #{userData.choice17}<br></br>
+        18. The course was delivered as outlined in the syllabus. : #{userData.choice18}<br></br>
+        19. Instructor explained the grading criteria of the course: #{userData.choice19}<br></br>
+        20. Exams related to the course learning outcomes. : #{userData.choice20}<br></br>
+        21. Projects/ assignments related to the course learning outcomes. : #{userData.choice21}<br></br>
+        Comments (Additional Question): #{userData.comment4}<br></br>
+        
+        <h2>Overall Experience</h2>
+        22. This was a worthwhile class. : #{userData.choice22}<br></br>
+        23. Would you recommend this course to a fellow student : #{userData.choice23}<br></br>
+        24. Overall, how do you rate your experience in this course? : #{userData.choice24} <br></br>
+        25. How many hours did you spend per week on preparation/homework for this course? : #{userData.choice25}<br></br>
+        Comments (Overall Experience): #{userData.comment5}<br></br>
+        
+        <h2>Student Self Evaluation</h2>
+        26. I contributed constructively during in-class activities. :#{userData.choice26}<br></br>
+        27. I feel I am achieving the learning outcomes. : #{userData.choice27}<br></br>
+        Comments (Student Self Evaluation): #{userData.comment6}<br></br>
+        
+        <h2>Comments on Strengths and Ways of Improvement </h2>
+        What changes would you recommend to improve this course? : #{userData.comment7}<br></br>
+         What did you like best about your instructors teaching? : #{userData.comment8}<br></br>
+         What did you like least about your instructor’s teaching? : #{userData.comment9}<br></br>
+         Any further, constructive comment: #{userData.comment10}<br></br>
+         <h:form>
+             <br></br>
+             <h:commandButton value = "Submit Evaluation" action = "#{userData.save()}" />
+         </h:form>
+    </h:body>
+</html>
+

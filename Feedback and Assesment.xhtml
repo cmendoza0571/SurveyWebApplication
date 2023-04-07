@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>UHCL Evaluation</title>
+    </h:head>
+   <h:body>
+
+   <h:form>
+       <h2>Feedback and Assessment</h2>
+<hr />
+
+
+    <h3>11. Information about the assessment was communicated clearly.</h3>
+<h:selectOneRadio value = "#{userData.choice11}">
+<f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+<f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+<f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+<f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+<f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+</h:selectOneRadio>
+
+<h3>12. Feedback was provided within the stated time frame.</h3>
+<h:selectOneRadio value = "#{userData.choice12}">
+<f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+<f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+<f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+<f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+<f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+
+</h:selectOneRadio>
+
+
+<h3>13. Feedback showed how to improve my work (e .g. corrections including comments). </h3>
+<h:selectOneRadio value = "#{userData.choice13}">
+<f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+<f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+<f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+<f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+<f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+
+</h:selectOneRadio>
+
+<h3>Comments(Feedback and Assessment)</h3>
+<h:inputText value="#{userData.comment2}" size="150"/>
+<br></br>
+
+
+<br></br>
+<h:commandButton value = "Back" action = "Teaching Approaches" />
+<br></br>
+<br></br>
+<h:commandButton value = "Next" action = "Resources and Administration" />
+
+
+
+
+</h:form>
+</h:body>
+</html>
+

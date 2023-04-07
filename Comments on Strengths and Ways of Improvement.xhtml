@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>UHCL Evaluation</title>
+    </h:head>
+   <h:body>
+
+   <h:form>
+       <h2>Comments on Strengths and Ways of Improvement</h2>
+<hr />
+
+     
+<h3>What changes would you recommend to improve this course?</h3>
+<h:inputText value="#{userData.comment7}" size="185"/>
+<br></br>
+
+<h3>What did you like best about your instructors teaching?</h3>
+<h:inputText value="#{userData.comment8}" size="185"/>
+<br></br>
+
+<h3>What did you like least about your instructor’s teaching?</h3>
+<h:inputText value="#{userData.comment9}" size="185"/>
+<br></br>
+
+<h3>Any further, constructive comment:</h3>    
+<h:inputText value="#{userData.comment10}" size="185"/>
+<br></br>
+
+
+
+<h:commandButton value = "Back" action = "Student Self Evaluation" />
+<br></br>
+<br></br>
+<h:commandButton value = "Finish and View" action = "Summary" />
+
+
+
+</h:form>
+</h:body>
+</html>

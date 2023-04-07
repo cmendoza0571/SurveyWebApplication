@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>UHCL Evaluation</title>
+    </h:head>
+   <h:body>
+
+   <h:form>
+       <h2>Resources and Administration</h2>
+<hr />
+
+
+    <h3>14. The course was supported by adequate library resources</h3>
+<h:selectOneRadio value = "#{userData.choice14}">
+<f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+<f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+<f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+<f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+<f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+</h:selectOneRadio>
+
+<h3>15. Blackboard resources for the course were useful</h3>
+<h:selectOneRadio value = "#{userData.choice15}">
+<f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+<f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+<f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+<f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+<f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+</h:selectOneRadio>
+
+
+<h3>16. Instructor gave guidance on where to find resources</h3>
+<h:selectOneRadio value = "#{userData.choice16}">
+<f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+<f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+<f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+<f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+<f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+</h:selectOneRadio>
+
+
+
+
+
+<h3>Comments(Resources and Administration)</h3>
+<h:inputText value="#{userData.comment3}" size="150"/>
+<br></br>
+<br></br>
+
+<h:commandButton value = "Back" action ="Feedback and Assesment"/>
+<br></br>
+<br></br>
+<h:commandButton value = "Next" action = "Additional Question" />
+
+
+
+</h:form>
+</h:body>
+</html>
+
+

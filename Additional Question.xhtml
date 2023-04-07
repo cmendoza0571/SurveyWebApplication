@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>UHCL Evaluation</title>
+    </h:head>
+   <h:body>
+
+   <h:form>
+       <h2>Additional Question</h2>
+<hr />
+
+
+    <h3>17. The syllabus was explained at the beginning of the course.</h3>
+<h:selectOneRadio value = "#{userData.choice17}">
+<f:selectItem itemValue = "Yes" itemLabel = "Yes" />
+<f:selectItem itemValue = "No" itemLabel = "No" />
+
+</h:selectOneRadio>
+
+<h3>18. The course was delivered as outlined in the syllabus.</h3>
+<h:selectOneRadio value = "#{userData.choice18}">
+<f:selectItem itemValue = "Yes" itemLabel = "Yes" />
+<f:selectItem itemValue = "No" itemLabel = "No" />
+</h:selectOneRadio>
+
+
+<h3>19. Instructor explained the grading criteria of the course.</h3>
+<h:selectOneRadio value = "#{userData.choice19}">
+<f:selectItem itemValue = "Yes" itemLabel = "Yes" />
+<f:selectItem itemValue = "No" itemLabel = "No" />
+</h:selectOneRadio>
+    
+
+<h3>20. Exams related to the course learning outcomes.</h3>
+<h:selectOneRadio value = "#{userData.choice20}">
+<f:selectItem itemValue = "Yes" itemLabel = "Yes" />
+<f:selectItem itemValue = "No" itemLabel = "No" />
+</h:selectOneRadio>
+
+<h3>21. Projects/ assignments related to the course learning outcomes.</h3>
+<h:selectOneRadio value = "#{userData.choice21}">
+<f:selectItem itemValue = "Yes" itemLabel = "Yes" />
+<f:selectItem itemValue = "No" itemLabel = "No" />
+</h:selectOneRadio>
+
+
+
+
+
+
+<h3>Comments(Additional Question)</h3>
+<h:inputText value="#{userData.comment4}" size="150"/>
+<br></br>
+<br></br>
+
+<h:commandButton value = "Back" action = "Resources and Administration" />
+
+<br></br>
+<br></br>
+<h:commandButton value = "Next" action = "Overall Experience" />
+
+
+
+</h:form>
+</h:body>
+</html>
+
